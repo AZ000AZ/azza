@@ -2,12 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/anasayfa', function () {
-    return view('anasayfa');
-});
-Route::get('/urunler', function () {
-    return view('urunler');
-});
+Route::get('/urunler', [\App\Http\Controllers\KirtasiyeController::class,'index']);
+
+
+
+
+
+
+
 
 Route::get('/giris', function () {
     return view('giris');
