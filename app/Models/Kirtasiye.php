@@ -9,6 +9,13 @@ class Kirtasiye extends Model
 {
     use HasFactory;
 
-    protected $table = 'kirtasiye'; // Veritabanındaki tablo adı
-    protected $fillable = ['name', 'description', 'price', 'image'];
+    protected $table = 'kirtasiye';
+    // Veritabanındaki tablo adı
+
+    protected $fillable = [
+        'name',
+        'description',
+        'price',
+        'image'
+    ];
 }
